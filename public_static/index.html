@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>An Year in Review</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+
+    <style>
+        body{
+            margin: 0;
+        }
+        #map{
+            width: 100%;
+            height: 100vh;
+            background-color: pink;
+        }
+        .foot{
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%!important;
+            z-index: 10000;
+            background-color: lightgrey;
+            opacity: 0.6;
+            height: 20vh;
+            margin: 0!important;
+        }
+    </style>
+</head>
+<body>
+<div id="map">
+</div>
+
+<div class="modal" id="markerModal">
+    <div class="modal-background animated fadeIn close"></div>
+    <div class="modal-content animated zoomIn">
+        <div class="card">
+            <div class="card-image">
+                <figure class="image is-4by3">
+                    <img src="https://bulma.io/images/placeholders/1280x960.png" alt="Placeholder image">
+                </figure>
+            </div>
+            <div class="card-content">
+                <div class="media">
+                    <div class="media-left">
+                        <figure class="image is-48x48">
+                            <img src="https://bulma.io/images/placeholders/96x96.png" alt="Placeholder image">
+                        </figure>
+                    </div>
+                    <div class="media-content">
+                        <p class="title is-4">John Smith</p>
+                        <p class="subtitle is-6">@johnsmith</p>
+                    </div>
+                </div>
+
+                <div class="content">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    Phasellus nec iaculis mauris. <a>@bulmaio</a>.
+                    <a href="#">#css</a> <a href="#">#responsive</a>
+                    <br>
+                    <time datetime="2016-1-1">11:09 PM - 1 Jan 2016</time>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="modal-close is-large close" aria-label="close"></button>
+</div>
+
+<div class="foot columns is-vcentered">
+        <div class="column is-one-quarter">
+            <i class="fas fa-5x fa-chevron-circle-left is-pulled-right"></i>
+        </div>
+        <div class="column">
+        </div>
+        <div class="column is-one-quarter">
+            <i class="fas fa-5x fa-chevron-circle-right is-pulled-left"></i>
+        </div>
+</div>
+
+<script src="js/map.js"></script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFjlAyZXOangdko_28YsHtmR7vEKiO120&callback=initMap">
+</script>
+<script src="js/modal.js"></script>
+</body>
+</html>
