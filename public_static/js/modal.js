@@ -14,5 +14,6 @@ window.App = {
                 $target.classList.remove('is-active');
             })
         }
-    }
+    },
+    markerArr: []
 };

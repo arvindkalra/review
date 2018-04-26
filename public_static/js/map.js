@@ -1,17 +1,43 @@
 let map;
-let curr_marker;
+let marker_arr = [
+    {
+        lat: 28.6724212,
+        lng: 77.1311649
+    },
+    {
+        lat: 28.6144212,
+        lng: 77.1411649
+    },
+    {
+        lat: 28.6354212,
+        lng: 77.1241649
+    },
+    {
+        lat: 28.6524212,
+        lng: 77.1241649
+    },
+    {
+        lat: 28.6524212,
+        lng: 77.1721649
+    },
+    {
+        lat: 28.6634212,
+        lng: 77.1721649
+    },
+    {
+        lat: 28.6634212,
+        lng: 77.1611649
+    }
+];
+
 function initMap() {
     if(navigator.geolocation){
         navigator.geolocation.getCurrentPosition(function (lat_lng) {
             console.log("Here");
-            let latLng = {
-                lat : lat_lng.coords.latitude,
-                lng : lat_lng.coords.longitude
-            };
 
-            map = new google.maps.Map(document.getElementById('map'), {
-                zoom: 15,
-                center: latLng,
+            window.App.map = new google.maps.Map(document.getElementById('map'), {
+                zoom: 14,
+                center: marker_arr[0],
                 disableDefaultUI: true,
                 styles: [
                     {
@@ -175,15 +201,22 @@ function initMap() {
                 ]
             });
 
-            if(curr_marker) curr_marker.setMap(null);
-            curr_marker = new google.maps.Marker({
-                position: latLng,
-                map: map,
-                scaledSize: new google.maps.Size(42, 68)
-            });
-            curr_marker.addListener('click', function (e) {
-                window.App.openModal('markerModal');
-            })
+            for(let i = 0; i < marker_arr.length; i++){
+                marker_arr[i].marker = new google.maps.Marker({
+                    position: {
+                        lat: marker_arr[i].lat,
+                        lng: marker_arr[i].lng
+                    },
+                    map: window.App.map,
+                    scaledSize: new google.maps.Size(42, 68)
+                });
+
+                window.App.markerArr.push(marker_arr[i]);
+
+                marker_arr[i].marker.addListener('click', function (e) {
+                    window.App.openModal('markerModal');
+                })
+            }
         })
     }
 }

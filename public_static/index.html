@@ -27,6 +27,14 @@
             height: 20vh;
             margin: 0!important;
         }
+        .fas:hover{
+            cursor: pointer;
+            color: brown;
+            transition: 0.2s ease;
+        }
+        .fas{
+            color: black;
+        }
     </style>
 </head>
 <body>
@@ -70,12 +78,12 @@
 
 <div class="foot columns is-vcentered">
         <div class="column is-one-quarter">
-            <i class="fas fa-5x fa-chevron-circle-left is-pulled-right"></i>
+            <i class="fas fa-5x fa-chevron-circle-left is-pulled-right" id="previous"></i>
         </div>
         <div class="column">
         </div>
         <div class="column is-one-quarter">
-            <i class="fas fa-5x fa-chevron-circle-right is-pulled-left"></i>
+            <i class="fas fa-5x fa-chevron-circle-right is-pulled-left" id="next"></i>
         </div>
 </div>
 
@@ -84,5 +92,6 @@
         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCFjlAyZXOangdko_28YsHtmR7vEKiO120&callback=initMap">
 </script>
 <script src="js/modal.js"></script>
+<script src="js/controls.js"></script>
 </body>
 </html>
