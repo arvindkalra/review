@@ -7,19 +7,23 @@ document.addEventListener('DOMContentLoaded', function () {
     let $previous = document.getElementById('previous');
 
     $next.addEventListener('click', function () {
+        curr_idx = (curr_idx + 1) % marker_arr.length;
+
         window.App.map.panTo({
-           lat: marker_arr[(curr_idx + 1) % marker_arr.length].lat,
-           lng: marker_arr[(curr_idx + 1) % marker_arr.length].lng
+            lat: marker_arr[curr_idx].lat,
+            lng: marker_arr[curr_idx].lng
         });
-        curr_idx++;
     });
 
     $previous.addEventListener('click', function () {
-        window.App.map.panTo({
-            lat: marker_arr[(curr_idx - 1) % marker_arr.length].lat,
-            lng: marker_arr[(curr_idx - 1) % marker_arr.length].lng
-        });
         curr_idx--;
+        if(curr_idx < 0){
+            curr_idx += marker_arr.length;
+        }
+        window.App.map.panTo({
+            lat: marker_arr[curr_idx].lat,
+            lng: marker_arr[curr_idx].lng
+        });
     });
 
 });

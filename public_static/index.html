@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gugi" rel="stylesheet">
 
     <style>
         body{
@@ -22,18 +23,25 @@
             bottom: 0;
             width: 100%!important;
             z-index: 10000;
-            background-color: lightgrey;
-            opacity: 0.6;
+            background-color: darkgray;
+            opacity: 0.8;
             height: 20vh;
             margin: 0!important;
         }
         .fas:hover{
             cursor: pointer;
             color: brown;
-            transition: 0.2s ease;
+            transition: 0.7s ease;
         }
         .fas{
             color: black;
+        }
+        h1{
+            /*font-weight: bold;*/
+            font-family: 'Gugi', cursive;
+            font-size: 1.3em!important;
+            color: black;
+            opacity: 1;
         }
     </style>
 </head>
@@ -80,7 +88,10 @@
         <div class="column is-one-quarter">
             <i class="fas fa-5x fa-chevron-circle-left is-pulled-right" id="previous"></i>
         </div>
-        <div class="column">
+        <div class="column has-text-centered">
+            <h1>
+                Info About the Picture.
+            </h1>
         </div>
         <div class="column is-one-quarter">
             <i class="fas fa-5x fa-chevron-circle-right is-pulled-left" id="next"></i>
