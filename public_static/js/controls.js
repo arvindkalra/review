@@ -9,6 +9,9 @@ document.addEventListener('DOMContentLoaded', function () {
     $next.addEventListener('click', function () {
         curr_idx = (curr_idx + 1) % marker_arr.length;
 
+        let $info = document.getElementById('info');
+        $info.innerHTML = marker_arr[curr_idx].name;
+
         window.App.map.panTo({
             lat: marker_arr[curr_idx].lat,
             lng: marker_arr[curr_idx].lng
@@ -20,6 +23,9 @@ document.addEventListener('DOMContentLoaded', function () {
         if(curr_idx < 0){
             curr_idx += marker_arr.length;
         }
+        let $info = document.getElementById('info');
+        $info.innerHTML = marker_arr[curr_idx].name;
+
         window.App.map.panTo({
             lat: marker_arr[curr_idx].lat,
             lng: marker_arr[curr_idx].lng
