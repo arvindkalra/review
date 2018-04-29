@@ -32,64 +32,69 @@ let map;
 
 let marker_arr = [
     {
-        "name" : "triply",
+        "name" : "1st Day of 3rd Semester",
         "lat" : 28.728670,
         "lng" : 77.082549
     },
     {
-        "name" : "pacific",
+        "name" : "Pacific Mall, Subhash Nagar",
         "lat" : 28.642031,
         "lng" : 77.106531
     },
     {
-        "name" : "shadipur",
+        "name" : "Shadipur Metro Station",
         "lat" : 28.651506,
         "lng" : 77.158451
     },
     {
-        "name" : "dominos_karolbagh",
+        "name" : "Domino's, Karol Bagh",
         "lat" : 28.642810,
         "lng" : 77.186350
     },
     {
-        "name" : "kundli_dominos",
+        "name" : "Domino's Near Murthal",
         "lat" : 28.888647,
         "lng" : 77.117057
     },
     {
-        "name" : "hmr",
+        "name" : "HMR College",
         "lat" : 28.823846,
         "lng" : 77.152519
     },
     {
-        "name" : "wfi",
+        "name" : "World Food India Hackathon",
         "lat" : 28.589878,
         "lng" : 77.225005
     },
     {
-        "name" : "dda_market",
+        "name" : "DDA Market (Sachdeva Market)",
         "lat" : 28.723610,
         "lng" : 77.127755
     },
     {
-        "name" : "pizza_hut_rohini",
+        "name" : "Pizza Hut, Metro Walk",
         "lat" : 28.724041,
         "lng" : 77.113369
     },
     {
-        "name" : "unity_one",
+        "name" : "Unity One, Rohini West",
         "lat" : 28.714798,
         "lng" : 77.116402
     },
     {
-        "name" : "hack_dtu",
+        "name" : "Hack DTU",
         "lat" : 28.749991,
         "lng" : 77.117428
     },
     {
-        "name" : "hansvihar",
+        "name" : "Hansvihar Society",
         "lat" : 28.724847,
         "lng" : 77.128500
+    },
+    {
+        "name" : "MAIT, Rohini",
+        "lat" : 28.71932194,
+        "lng" : 77.06560965
     }
 ];
 
