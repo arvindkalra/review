@@ -32,9 +32,24 @@ let map;
 
 let marker_arr = [
     {
+        "name" : "triply",
+        "lat" : 28.728670,
+        "lng" : 77.082549
+    },
+    {
         "name" : "pacific",
         "lat" : 28.642031,
         "lng" : 77.106531
+    },
+    {
+        "name" : "shadipur",
+        "lat" : 28.651506,
+        "lng" : 77.158451
+    },
+    {
+        "name" : "dominos_karolbagh",
+        "lat" : 28.642810,
+        "lng" : 77.186350
     },
     {
         "name" : "kundli_dominos",
@@ -42,9 +57,19 @@ let marker_arr = [
         "lng" : 77.117057
     },
     {
+        "name" : "hmr",
+        "lat" : 28.823846,
+        "lng" : 77.152519
+    },
+    {
         "name" : "wfi",
         "lat" : 28.589878,
         "lng" : 77.225005
+    },
+    {
+        "name" : "dda_market",
+        "lat" : 28.723610,
+        "lng" : 77.127755
     },
     {
         "name" : "pizza_hut_rohini",
@@ -65,31 +90,6 @@ let marker_arr = [
         "name" : "hansvihar",
         "lat" : 28.724847,
         "lng" : 77.128500
-    },
-    {
-        "name" : "dda_market",
-        "lat" : 28.723610,
-        "lng" : 77.127755
-    },
-    {
-        "name" : "triply",
-        "lat" : 28.728670,
-        "lng" : 77.082549
-    },
-    {
-        "name" : "shadipur",
-        "lat" : 28.651506,
-        "lng" : 77.158451
-    },
-    {
-        "name" : "hmr",
-        "lat" : 28.823846,
-        "lng" : 77.152519
-    },
-    {
-        "name" : "dominos_karolbagh",
-        "lat" : 28.642810,
-        "lng" : 77.186350
     }
 ];
 
