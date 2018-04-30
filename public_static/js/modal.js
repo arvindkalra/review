@@ -1,5 +1,9 @@
 window.App = {
-    openModal : function (target) {
+    openModal : function (target, i) {
+        console.log(i);
+        let imgsrc = marker_arr[i].img;
+        let $imgHolder = document.getElementById('imgHolder');
+        $imgHolder.src = imgsrc;
         // Get the target from the "data-target" attribute
         // let target = $requestBtn.dataset.target;
         let $target = document.getElementById(target);

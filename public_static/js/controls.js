@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
        }
     });
 
-    let marker_arr = window.App.markerArr;
     let curr_idx = 0;
+
 
     let $next = document.getElementById('next');
     let $previous = document.getElementById('previous');

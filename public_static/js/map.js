@@ -1,100 +1,83 @@
 let map;
-// let marker_arr = [
-//     {
-//         lat: 28.6724212,
-//         lng: 77.1311649
-//     },
-//     {
-//         lat: 28.6144212,
-//         lng: 77.1411649
-//     },
-//     {
-//         lat: 28.6354212,
-//         lng: 77.1241649
-//     },
-//     {
-//         lat: 28.6524212,
-//         lng: 77.1241649
-//     },
-//     {
-//         lat: 28.6524212,
-//         lng: 77.1721649
-//     },
-//     {
-//         lat: 28.6634212,
-//         lng: 77.1721649
-//     },
-//     {
-//         lat: 28.6634212,
-//         lng: 77.1611649
-//     }
-// ];
 
 let marker_arr = [
     {
         "name" : "1st Day of 3rd Semester",
         "lat" : 28.728670,
-        "lng" : 77.082549
+        "lng" : 77.082549,
+        "img" : "pics/0.jpg"
     },
     {
         "name" : "Pacific Mall, Subhash Nagar",
         "lat" : 28.642031,
-        "lng" : 77.106531
+        "lng" : 77.106531,
+        "img" : "pics/1.jpg"
     },
     {
         "name" : "Shadipur Metro Station",
         "lat" : 28.651506,
-        "lng" : 77.158451
+        "lng" : 77.158451,
+        "img" : "pics/2.jpg"
     },
     {
         "name" : "Domino's, Karol Bagh",
         "lat" : 28.642810,
-        "lng" : 77.186350
+        "lng" : 77.186350,
+        "img" : "pics/3.jpg"
     },
     {
         "name" : "Domino's Near Murthal",
         "lat" : 28.888647,
-        "lng" : 77.117057
+        "lng" : 77.117057,
+        "img" : "pics/4.jpg"
     },
     {
         "name" : "HMR College",
         "lat" : 28.823846,
-        "lng" : 77.152519
+        "lng" : 77.152519,
+        "img" : "pics/5.jpg"
     },
     {
         "name" : "World Food India Hackathon",
         "lat" : 28.589878,
-        "lng" : 77.225005
+        "lng" : 77.225005,
+        "img" : "pics/6.jpg"
     },
     {
         "name" : "DDA Market (Sachdeva Market)",
         "lat" : 28.723610,
-        "lng" : 77.127755
+        "lng" : 77.127755,
+        "img" : "pics/7.jpg"
     },
     {
         "name" : "Pizza Hut, Metro Walk",
         "lat" : 28.724041,
-        "lng" : 77.113369
+        "lng" : 77.113369,
+        "img" : "pics/8.jpg"
     },
     {
         "name" : "Unity One, Rohini West",
         "lat" : 28.714798,
-        "lng" : 77.116402
+        "lng" : 77.116402,
+        "img" : "pics/9.jpg"
     },
     {
         "name" : "Hack DTU",
         "lat" : 28.749991,
-        "lng" : 77.117428
+        "lng" : 77.117428,
+        "img" : "pics/10.jpg"
     },
     {
         "name" : "Hansvihar Society",
         "lat" : 28.724847,
-        "lng" : 77.128500
+        "lng" : 77.128500,
+        "img" : "pics/11.jpg"
     },
     {
         "name" : "MAIT, Rohini",
         "lat" : 28.71932194,
-        "lng" : 77.06560965
+        "lng" : 77.06560965,
+        "img" : "pics/12.jpg"
     }
 ];
 
@@ -279,7 +262,7 @@ function initMap() {
         window.App.markerArr.push(marker_arr[i]);
 
         marker_arr[i].marker.addListener('click', function (e) {
-            window.App.openModal('markerModal');
+            window.App.openModal('markerModal', i);
         })
     }
 }
